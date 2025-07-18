@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
   <title>Rajesh Sonar - About Me</title>
   <style>
     body {
@@ -153,9 +154,14 @@
 
     <div class="section">
       <h2>GitHub Contributions</h2>
-<!--       <img src="https://github-readme-stats.vercel.app/api?username=rsonar-bb&show_icons=true&theme=default" alt="GitHub Stats"> -->
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=rsonar-bb" alt="GitHub Contribution Streak">
+      <div class="calendar">Loading GitHub contributions…</div>
     </div>
   </div>
+
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script>
+  GitHubCalendar(".calendar", "rsonar-bb", { responsive: true });
+</script>
+  
 </body>
 </html>
